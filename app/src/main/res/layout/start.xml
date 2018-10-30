@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Start"
+    android:background="@color/green_50"
+    android:theme="@style/AppTheme"
+    >
+
+
+    <RadioGroup
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+
+            android:paddingBottom="@dimen/spacing_large"
+            android:id="@+id/rdZawgyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Zawgyi font"
+            />
+
+        <RadioButton
+            android:id="@+id/rdUnicode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Unicode font"
+            />
+    </RadioGroup>
+
+    <Button
+        android:background="@drawable/btn_rounded_green_300"
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:layout_marginRight="@dimen/spacing_xxlarge"
+        android:layout_marginLeft="@dimen/spacing_xxlarge"
+        android:layout_marginBottom="@dimen/spacing_xxxlarge"
+        android:textColor="@color/white"
+        android:text="Continue" />
+</RelativeLayout>
